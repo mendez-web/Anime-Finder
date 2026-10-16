@@ -9,7 +9,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="border border-black w-dvw flex h-15 items-center px-10 justify-between">
+    <nav className="border border-black w-full flex h-15 items-center px-10 justify-between">
       <h1 className="text-black font-bold text-2xl cursor-pointer">
         Anime Finder
       </h1>

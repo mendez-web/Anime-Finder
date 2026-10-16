@@ -8,7 +8,7 @@ async function fetchAnimes(path) {
       throw new Error("Anime Request Failed");
     }
     const data = await res.json();
-    console.log(data)
+    console.log(data);
     await timeout(1000);
     return data;
   } catch (error) {
@@ -17,10 +17,10 @@ async function fetchAnimes(path) {
   }
 }
 
-export function getPopularAnimes({ amount = 15 }) {
+export function getPopularAnimes(amount = 15) {
   return fetchAnimes(`top/anime?filter=bypopularity&limit=${amount}`);
 }
 
-export function getRandomAnimes({ amount = 15 }) {
-  return fetchAnimes(`anime?limit=${amount}`);
+export function getRandomAnimes(amount = 15) {
+  return fetchAnimes(`top/anime?limit=${amount}`);
 }

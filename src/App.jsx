@@ -1,6 +1,6 @@
 import "./App.css";
 import { Navbar } from "./components/Navbar";
-import { AllAnimes } from "./pages/AllAnimes";
+import { AllAnimes } from "./pages/RandomAnimes";
 
 function App() {
   
