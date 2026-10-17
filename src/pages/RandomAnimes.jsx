@@ -28,7 +28,7 @@ export const AllAnimes = () => {
       <div className="header-container px-25 py-5 ">
         <h1 className="text-5xl text-text-primary font-bold">Animes</h1>
       </div>
-      <div className="anime-container flex flex-wrap gap-5 items-center justify-center w-full h-[90%]">
+      <div className="anime-container flex flex-wrap gap-6 items-center justify-center w-full h-[90%]">
         {isLoading && <p>Loading...</p>}
         {error ? <p>{error}</p> : null}
         {animes.map((anime) => (
